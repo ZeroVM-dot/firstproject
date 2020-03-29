@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Projeto N1</title>
+</head>
+<body>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">{% block welcome %}{% endblock %}</th>
+    </tr>
+  </thead>
+</table>
+{% block bar %}
+{% endblock %}
+{% block body %}{% endblock %}
+</body>
+</html>

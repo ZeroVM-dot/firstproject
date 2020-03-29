@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+
+{% block welcome %}
+Bem-Vindo ao Projecto N1
+{% endblock %}
+
+{% block bar %}
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="http://127.0.0.1:5000">Index</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="http://127.0.0.1:5000/database">Database</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="http://127.0.0.1:5000/info">Sobre mim</a>
+</ul>
+{% endblock %}
+
+{% block body %}
+<div class="alert alert-primary" role="alert">
+<h5>Sobre o website:</h5>
+</div>
+<p>Nesse website iremos iniciar os estudos sobre nossas aulas de programação Python e Javascript da CS50</p>
+<p>A programação contida aqui é referente da aula 01 até a aula 04</p>
+<div class="alert alert-primary" role="alert">
+<h5>Linguagens utilizadas:</h5>
+</div>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Python</li>
+  <li>SQL</li>
+</ul>
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Notas:</h4>
+  <hr>
+<p>Esse é o meu primeiro website através das aulas distribuidas pela CS50, tentarei trazer aqui algo sério para avaliar tudo que aprendi nessas semanas, com o tempo, trarei outros projetos similares a esse , com a mesma linguagem ou diferente</p>
+<hr>
+<p>Aqui não vai ter nada complexo, apesar exibição de determinadas tabelas para facilitar a memorização dos códigos que aprendi nas aulas</p>
+<hr>
+<p>Todo esse projeto ficará disponível no repositório do GIT</p>
+<hr>
+<p>Como estou começando, utilizarei aqui o Português para faciliar um pouco as coisas pra mim :D </p>
+</div>
+<div class="alert alert-dark" role="alert">
+<h5 class="alert-heading">Log 29/03/2020:</h5>
+<p>Adicionado na aba de navegação o endereço "Database"</p>
+<p>Retirado da <span style="color: red;">Index.html</span> "informações sobre estudante"</p>
+<p>Novo arquivo <span style="color: red;">"infos.html"</span> anexada</p>
+<p>Adicionado novo <span style="color: red;">app.route</span> no <span style="color: red;">application.py</span></p>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block welcome %}
+Bem-Vindo ao Projecto N1/DATABASE
+{% endblock %}
+{% block bar %}
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="http://127.0.0.1:5000">Index</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link active" href="http://127.0.0.1:5000/database">Database</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="http://127.0.0.1:5000/info">Sobre mim</a>
+</ul>
+{% endblock %}
+{% block body %}
+<div class="alert alert-primary" role="alert">
+<h5>Usuários:</h5>
+</div>
+
+<ul>
+  {% for users in users %}
+  <li>{{ users.username }}</li>
+  {% endfor %}
+</ul>
+
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Notas:</h4>
+  <hr>
+<p>Comandos simples no aplicativo Python pedindo pra mostrar as tabelas na databas.</p>
+<p>A tabela continha outros "conjuntos", como "Password", mas deixei pra mostrar apenas os usuários mesmos pra da aquela impressão de segurança hehe xD</p>
+<hr>
+<p>Nessas suas páginas simples tem praticamente todo o conteúdo do curso, mas tentarei com o tempo deixar cada vez mais complexo utilizando apenas isso e a cada atualização deixarei um LOG no determinado site atualizado</p>
+<p>A log de todas as páginas anexadas pode ser encontrado na própria index</p>
+</div>
+
+{% endblock %}
